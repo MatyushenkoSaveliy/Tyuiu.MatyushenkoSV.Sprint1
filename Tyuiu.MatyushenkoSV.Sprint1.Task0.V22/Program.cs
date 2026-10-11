@@ -1,4 +1,5 @@
-﻿using Tyuiu.MatyushenkoSV.Sprint1.Task0.V22.Lib;
+﻿using System;
+using Tyuiu.MatyushenkoSV.Sprint1.Task0.V22.Lib;
 
 namespace Tyuiu.MatyushenkoSV.Sprint1.Task0.V22
 {
@@ -8,16 +9,17 @@ namespace Tyuiu.MatyushenkoSV.Sprint1.Task0.V22
         {
             DataService ds = new DataService();
 
-            Console.Title = "Спринт #1 | Выполнил: Матюшенко С. В. | ИСТб-26-1";
+            Console.Title = "Спринт #1 | Выполнил: Матюшенко С. В. | Вариант #22";
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
             Console.WriteLine("* Тема: Базовые навыки работы в C#                                        *");
             Console.WriteLine("* Задание #0                                                              *");
             Console.WriteLine("* Вариант #22                                                             *");
-            Console.WriteLine("* Выполнил: Матюшенко Сергей Владимирович | ИСТб-26-1                     *");
+            Console.WriteLine("* Выполнил: Матюшенко Савелий Владимирович | ИИПб-26-1                    *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая вычисляет выражение 6 * 2 - (5 - 3)         *");
+            Console.WriteLine("* Написать программу, которая вычисляет выражение 6*2-(5-3)               *");
             Console.WriteLine("* и печатает результат на экране.                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
@@ -29,7 +31,7 @@ namespace Tyuiu.MatyushenkoSV.Sprint1.Task0.V22
 
             Console.WriteLine(ds.Calculate());
 
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
 }
