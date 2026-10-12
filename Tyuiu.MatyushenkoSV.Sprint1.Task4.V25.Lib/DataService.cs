@@ -8,12 +8,9 @@ namespace Tyuiu.MatyushenkoSV.Sprint1.Task4.V25.Lib
         public double Calculate(double a)
         {
             double numerator = 1 - Math.Cos(a);
-           
-            double denominator = Math.Pow(Math.Sin(a), 2) + 1e-9;
+            double denominator = Math.Pow(Math.Sin(a), 2);
 
-            double res = numerator / denominator;
-
-            return Math.Round(res, 3);
+            return Math.Round(numerator / denominator, 3);
         }
     }
 }

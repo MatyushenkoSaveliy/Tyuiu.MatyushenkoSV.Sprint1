@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿
 using Tyuiu.MatyushenkoSV.Sprint1.Task4.V25.Lib;
 
 namespace Tyuiu.MatyushenkoSV.Sprint1.Task4.V25.Test
@@ -7,13 +7,13 @@ namespace Tyuiu.MatyushenkoSV.Sprint1.Task4.V25.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidExpression()
+        public void ValidCalc()
         {
             DataService ds = new DataService();
-            double a = 1;
-            double wait = 0.649;
+            double a = 1.0;
+            double res = ds.Calculate(a);
 
-            var res = ds.Calculate(a);
+            double wait = Math.Round((1 - Math.Cos(a)) / Math.Pow(Math.Sin(a), 2), 3);
 
             Assert.AreEqual(wait, res);
         }
