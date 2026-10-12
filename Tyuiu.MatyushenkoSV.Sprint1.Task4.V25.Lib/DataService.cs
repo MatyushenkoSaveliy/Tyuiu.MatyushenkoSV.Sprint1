@@ -7,8 +7,12 @@ namespace Tyuiu.MatyushenkoSV.Sprint1.Task4.V25.Lib
     {
         public double Calculate(double a)
         {
-            double numerator = 1 - Math.Cos(a);
-            double denominator = Math.Pow(Math.Sin(a), 2);
+            double rad = a * Math.PI / 180.0;
+
+            double numerator = 1 - Math.Cos(rad);
+            double denominator = Math.Pow(Math.Sin(rad), 2);
+
+            if (denominator == 0) return 0;
 
             return Math.Round(numerator / denominator, 3);
         }
