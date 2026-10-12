@@ -14,7 +14,7 @@ namespace Tyuiu.MatyushenkoSV.Sprint1.Task4.V25.Test
             double a = 1.0;
             double res = ds.Calculate(a);
 
-            double wait = Math.Round(1.0 / (2 * Math.Pow(Math.Cos(a / 2.0), 2)), 3);
+            double wait = Math.Round((1 - Math.Cos(a)) / Math.Pow(Math.Sin(a), 2), 3);
 
             Assert.AreEqual(wait, res);
         }

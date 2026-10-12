@@ -7,11 +7,11 @@ namespace Tyuiu.MatyushenkoSV.Sprint1.Task4.V25.Lib
     {
         public double Calculate(double a)
         {
-            double denominator = 2 * Math.Pow(Math.Cos(a / 2.0), 2);
+            
+            double numerator = 1 - Math.Cos(a);
+            double denominator = Math.Pow(Math.Sin(a), 2);
 
-            if (denominator == 0) return 0;
-
-            return Math.Round(1.0 / denominator, 3);
+            return Math.Round(numerator / denominator, 3);
         }
     }
 }
