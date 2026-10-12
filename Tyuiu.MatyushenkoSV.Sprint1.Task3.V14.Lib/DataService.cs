@@ -16,6 +16,6 @@ namespace Tyuiu.MatyushenkoSV.Sprint1.Task3.V14.Lib
             double reversed = units * 100 + tens * 10 + hundreds;
 
             return reversed;
-        }
+        } 
     }
 }
