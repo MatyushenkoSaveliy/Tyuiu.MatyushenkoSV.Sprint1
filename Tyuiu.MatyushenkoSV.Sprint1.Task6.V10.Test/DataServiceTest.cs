@@ -19,5 +19,5 @@ namespace Tyuiu.MatyushenkoSV.Sprint1.Task6.V10.Test
 
             Assert.AreEqual(wait, res);
         }
-    }
+    } 
 }
