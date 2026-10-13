@@ -7,9 +7,16 @@ namespace Tyuiu.MatyushenkoSV.Sprint1.Task4.V25.Lib
     {
         public double Calculate(double x)
         {
-            double res = (1 - Math.Cos(x)) / Math.Pow(Math.Sin(x), 2);
-            res = Math.Round(res, 3);
-            return res;
+            double numerator = 1 - Math.Cos(x);
+            double denominator = Math.Pow(Math.Sin(x), 2);
+
+            if (Math.Abs(denominator) < 1e-7)
+            {
+                return 0;
+            }
+
+            double res = numerator / denominator;
+            return Math.Round(res, 3);
         }
     }
 }
