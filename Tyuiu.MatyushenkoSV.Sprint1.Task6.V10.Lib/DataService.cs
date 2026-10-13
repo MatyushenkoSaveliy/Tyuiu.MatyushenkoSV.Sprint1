@@ -16,7 +16,6 @@ namespace Tyuiu.MatyushenkoSV.Sprint1.Task6.V10.Lib
                 if (word.Length % 2 != 0)
                 {
                     int centerIndex = word.Length / 2;
-
                     words[i] = word.Remove(centerIndex, 1);
                 }
             }
