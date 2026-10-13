@@ -13,8 +13,8 @@ namespace Tyuiu.MatyushenkoSV.Sprint1.Task7.V28
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
-            Console.WriteLine("* Тема: Решение итоговой задачи                                           *");
-            Console.WriteLine("* Задание #4                                                              *");
+            Console.WriteLine("* Тема: Создания итогового решения по спринту                             *");
+            Console.WriteLine("* Задание #7                                                              *");
             Console.WriteLine("* Вариант #28                                                             *");
             Console.WriteLine("* Выполнил: Матюшенко Савелий Владимирович | ИИПб-26-1                    *");
             Console.WriteLine("***************************************************************************");
