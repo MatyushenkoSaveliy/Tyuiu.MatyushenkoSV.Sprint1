@@ -1,22 +1,19 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint1;
-using System;
+﻿using System;
+using tyuiu.cources.programming.interfaces.Sprint1;
 
 namespace Tyuiu.MatyushenkoSV.Sprint1.Task4.V25.Lib
 {
     public class DataService : ISprint1Task4V25
     {
-        public double Calculate(double x)
+        public double Calculate(double a)
         {
-            double numerator = 1 - Math.Cos(x);
-            double denominator = Math.Pow(Math.Sin(x), 2);
+            double numerator = 1 - Math.Cos(a);
 
-            if (Math.Abs(denominator) < 1e-7)
-            {
-                return 0;
-            }
+            double denominator = Math.Pow(Math.Sin(a), 2);
 
-            double res = numerator / denominator;
-            return Math.Round(res, 3);
+            double result = numerator / denominator;
+
+            return Math.Round(result, 3);
         }
     }
 }
